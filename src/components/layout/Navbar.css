@@ -1,0 +1,7 @@
+.nav-link svg > path {
+  fill: #ffffff;
+}
+.unselected svg > path {
+  fill: #5a698f;
+  fill: #c6d5fc;
+}
