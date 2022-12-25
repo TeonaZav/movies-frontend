@@ -104,6 +104,7 @@ const LoginForm = () => {
               placeholder="Password"
               autoComplete="off"
               label="Password"
+              type="password"
             />
             <Button
               colorScheme="teal"

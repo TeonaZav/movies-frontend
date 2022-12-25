@@ -16,7 +16,7 @@ const RegistrationForm = () => {
   const [errorCode, setErrorCode] = useState(null);
   const cookies = new Cookies();
   const URL = "https://movies-backend-t.onrender.com/api/v1/users";
-  
+
   return (
     <AnimatePresence>
       <motion.div
@@ -106,11 +106,13 @@ const RegistrationForm = () => {
               name="password"
               placeholder="Password"
               autoComplete="off"
+              type="password"
             />
             <TextField
               name="passwordConfirm"
               placeholder="Repeat password"
               autoComplete="off"
+              type="password"
             />
             <Button
               colorScheme="teal"
