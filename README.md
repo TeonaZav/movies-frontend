@@ -81,7 +81,9 @@ To install this application:
 npm install
 npm start
 
-P.S. I’m using Render hosting for the Backend. Since Web Services on the free instance type are automatically spun down after 15 minutes of inactivity,  when a new request comes in, Render wakes up after 30 seconds
+P.S. I’m using Render hosting for the Backend. Since Web Services on the free instance 
+type are automatically spun down after 15 minutes of inactivity,  when a new request 
+comes in, Render wakes up after 30 seconds
 ```
 
 ##
