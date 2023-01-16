@@ -89,5 +89,6 @@ comes in, Render wakes up after 30 seconds
 ##
 
 ## Links
-
+https://github.com/TeonaZav/movies-backend
+- Backend: [backend GitHub repo](https://github.com/TeonaZav/movies-backend)
 - Solution URL: [Netlify - Entertainment web app](https://movies-app-t.netlify.app/)
