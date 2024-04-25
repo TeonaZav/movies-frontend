@@ -44,7 +44,7 @@ const UserItem = () => {
   return (
     <section className="lg:pt-[6.4rem] bg-opacity-50 h-screen w-[100vw] flex flex-col items-center mt-12">
       {user && (
-        <div className="mx-auto container sm:w-[34.3rem] md:w-[71.9rem] lg:w-[124rem] max-h-[140rem] md:w-3/4 shadow-md ">
+        <div className="mx-auto container sm:w-[34.3rem] lg:w-[124rem] max-h-[140rem] md:w-3/4 shadow-md ">
           <div className="bg-[#c6d5fc] space-y-6">
             <div className="md:inline-flex space-y-4 md:space-y-0 w-full p-4 text-gray-500 items-center">
               <h2 className="md:w-1/3 max-w-sm mx-auto">Account</h2>
