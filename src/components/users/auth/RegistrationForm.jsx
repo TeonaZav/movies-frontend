@@ -46,7 +46,7 @@ const RegistrationForm = () => {
         if (response.status === 500) {
           toast.error("Server error occurred. Please try again later.");
         }
-
+        toast.dismiss(toastId);
         toast.error(`Error: ${data.message}`);
         return;
       }
@@ -72,6 +72,7 @@ const RegistrationForm = () => {
       } else {
         setErrorM(data.message || "Registration failed");
         toast.error(data.message || "Registration failed");
+        toast.dismiss(toastId);
       }
     } catch (err) {
       toast.dismiss(toastId);
