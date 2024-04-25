@@ -1,12 +1,14 @@
 import React from "react";
-import AddFavorites from "./AddFavorites";
+import AddFavorites from "../AddFavorites";
 import { NavLink } from "react-router-dom";
+import { useModal } from "../../context/ModalContext";
 
-function Modal({ showModal, setShowModal }) {
+function Modal() {
+  const { modalIsOpen, closeModal } = useModal();
   return (
     <div>
       <AddFavorites />
-      {showModal ? (
+      {modalIsOpen ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
@@ -17,7 +19,7 @@ function Modal({ showModal, setShowModal }) {
                   </p>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-white opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => setShowModal(false)}
+                    onClick={closeModal}
                   >
                     <span className="bg-transparent text-[#b8c9f5] opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                       ×
@@ -33,7 +35,7 @@ function Modal({ showModal, setShowModal }) {
                   <button
                     className="text-[#b8c9f5] background-transparent   px-6 py-2 text-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 tracking-wider"
                     type="button"
-                    onClick={() => setShowModal(false)}
+                    onClick={closeModal}
                   >
                     Close
                   </button>
@@ -41,7 +43,7 @@ function Modal({ showModal, setShowModal }) {
                     <button
                       className="bg-[#FC4747] text-white tracking-wide active:bg-[#FC4747] text-lg px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                       type="button"
-                      onClick={() => setShowModal(false)}
+                      onClick={closeModal}
                     >
                       Log in
                     </button>
